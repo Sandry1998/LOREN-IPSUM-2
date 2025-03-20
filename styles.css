@@ -17,7 +17,6 @@ header, footer {
   color: black;
   text-align: center;
 }
-
 .container {
   display: flex;
   background-color: white;
@@ -63,3 +62,22 @@ aside {
   
   
 }
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+ nav{
+  order: 1;
+  min-width: 100%;
+ }
+  aside{
+    order: 2;
+    min-width: 100%;
+  }
+  main {
+    order: 3;
+    width: 100%;
+  }
+  
+}
+ 
